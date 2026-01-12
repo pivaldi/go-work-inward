@@ -63,22 +63,11 @@ This project showcases Go's workspace feature (introduced in Go 1.18) with multi
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <project-directory>
-   ```
-
-2. Ensure Go is installed and accessible:
-   ```bash
-   go version
-   # Should show: go version go1.25.x linux/amd64
-   ```
-
-3. The workspace is already configured with `go.work`. Verify it:
-   ```bash
-   cat go.work
-   ```
+```bash
+git clone https://github.com/pivaldi/go-work-inward.git
+cd go-work-inward
+go run .
+```
 
 ## Usage
 
@@ -256,35 +245,3 @@ func WhoIsApp2() string {
 ```
 
 App1 leverages the common package to communicate with app2, demonstrating loose coupling.
-
-## Troubleshooting
-
-### "command not found: go"
-
-Ensure Go is in your PATH:
-```bash
-export PATH=$PATH:/usr/local/go/bin
-```
-
-### "cannot find module providing package"
-
-Run from root directory:
-```bash
-go work sync
-```
-
-### Module version mismatch
-
-Ensure all modules use compatible Go versions in their `go.mod` files.
-
-## License
-
-[Add your license here]
-
-## Contributing
-
-[Add contribution guidelines here]
-
-## Contact
-
-[Add contact information here]

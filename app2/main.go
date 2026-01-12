@@ -1,7 +1,10 @@
 package main
 
-import "gwi/app1/app"
+import (
+	"fmt"
+	"gwi/app1/app"
+)
 
 func main() {
-	app.WhoAmI()
+	fmt.Println(app.WhoAmI())
 }
