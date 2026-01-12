@@ -1,12 +1,13 @@
 package main
 
 import (
-	"gwi/app1"
-	"gwi/app2"
+	"fmt"
+	app1 "gwi/app1/app"
+	app2 "gwi/app2/app"
 )
 
 func main() {
-	app1.WhoAmI()
-	app2.WhoAmI()
-	app1.WhoIsApp2()
+	fmt.Println(app1.WhoAmI())
+	fmt.Println(app2.WhoAmI())
+	fmt.Println(app1.WhoIsApp2())
 }

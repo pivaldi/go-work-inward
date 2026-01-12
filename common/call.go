@@ -1,9 +1,9 @@
 package common
 
 import (
-	"gwi/app1"
+	app2 "gwi/app2/app"
 )
 
-func CallApp1() {
-	app1.WhoAmI()
+func WhoIsApp2() string {
+	return app2.WhoAmI()
 }
